@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ecommerce-config
+data:
+  ENVIRONMENT: "kubernetes"
+  POSTGRES_DB: "ecommerce_db"
+  REDIS_URL: "redis://redis:6379/0"
+  ALGORITHM: "HS256"
+  ACCESS_TOKEN_EXPIRE_MINUTES: "60"
+  BACKEND_CORS_ORIGINS: "http://localhost:5173,http://localhost:3000,http://localhost:30080,http://frontend"
