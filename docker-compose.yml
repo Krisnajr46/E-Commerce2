@@ -40,7 +40,7 @@ services:
     environment:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/ecommerce_db
       REDIS_URL: redis://redis:6379/0
-      SECRET_KEY: change_this_secret_key
+      SECRET_KEY: eb5dde6baa1f504a8741e70e6ea13f158c7698b1e6ee64f8e89959613db3c3f6
       ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: "60"
       BACKEND_CORS_ORIGINS: http://localhost:5173,http://localhost:3000,http://frontend
