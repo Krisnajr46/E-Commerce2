@@ -24,22 +24,19 @@ jobs:
           script: |
             set -e
 
-            echo "=== Go to project directory ==="
-            cd ~/cloud-native-fullstack-ecommerce-platform
+            echo "=== Go to project ==="
+            cd ~/project1/cloud-native-fullstack-ecommerce-platform
 
             echo "=== Pull latest code ==="
             git pull origin main
 
-            echo "=== Stop old containers ==="
-            docker compose down
-
-            echo "=== Build and start containers ==="
+            echo "=== Build and start ==="
             docker compose up -d --build
 
-            echo "=== Wait for services ==="
+            echo "=== Wait for backend ==="
             sleep 15
 
-            echo "=== Run database migrations ==="
+            echo "=== Database migration ==="
             docker exec ecommerce-backend alembic upgrade head
 
             echo "=== Container status ==="

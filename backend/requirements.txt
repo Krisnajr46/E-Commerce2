@@ -12,3 +12,4 @@ python-multipart
 email-validator
 redis
 bcrypt==4.0.1
+psycopg[binary]
