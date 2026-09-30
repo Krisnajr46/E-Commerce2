@@ -377,14 +377,6 @@ Example response:
 - Terraform Infrastructure
 - Advanced Analytics Dashboard
 
----
-
-# Author
-
+reference
 Om Shah
-
-Master’s Student — Arizona State University  
-Software Engineer | Full Stack Developer | Cloud & AI Enthusiast
-
----
 
